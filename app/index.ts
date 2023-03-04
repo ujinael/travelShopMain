@@ -11,7 +11,6 @@ const imagesStore = images; // ссылка на изображения нужн
 const initApp = async ()=>{
 initHeaderTitle('Туры', 'h1');
 initFooterTitle('Туры по всему миру', 'h2');
-// init data
 const tourData: Promise<ITours[]> = getTours();
 toursDataArray = await tourData
 initToursDivElements(toursDataArray);

@@ -9,6 +9,7 @@ let ticketInstance: TicketType ;
 let ticketPostInstance:Record<string|symbol,any>;
 const clientType = "custom";
 function initTicketInfo(ticket: TicketType):void {
+console.log(ticket);
 
     const targetElement = document.querySelector('.ticket-info');
 

@@ -5,8 +5,8 @@ import { ITours } from './../../models/tours';
 export function initToursDivElements(data:Array<ITours>):void {
 
     if (Array.isArray(data)) {
-      const rootElement = document.querySelector('.main-app');
-      const tourWrap = document.createElement('div');
+      const rootElement:HTMLDivElement = document.querySelector('.main-app');
+      const tourWrap:HTMLDivElement = document.createElement('div');
   
       tourWrap.classList.add('tour-wrap');
   

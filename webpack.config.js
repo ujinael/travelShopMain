@@ -64,6 +64,7 @@ module.exports = {
     resolve: {
 
         alias: {
+            '@templates':path.resolve(__dirname, './app/templates/'),
             '@rest': path.resolve(__dirname, './app/services/rest/'),
             '@services': path.resolve(__dirname, './app/services/'),
             '@assets': path.resolve(__dirname, './app/assets/'),

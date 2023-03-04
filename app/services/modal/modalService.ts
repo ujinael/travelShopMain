@@ -31,4 +31,3 @@ export function openModal(type:string, i: number):void {
     }
 }
 
-

@@ -6,7 +6,7 @@ import { TicketType, IVipTicket } from './../../models/ticket/ticket';
 import { postTicketData } from "@services/rest/tickets";
 
 let ticketInstance: TicketType ;
-let ticketPostInstance;
+let ticketPostInstance:Record<string|symbol,any>;
 const clientType = "custom";
 function initTicketInfo(ticket: TicketType):void {
 
@@ -44,7 +44,9 @@ const userInfoObj:Record<string|symbol,any> = {};
     return userInfoObj;
 }
 
-function initPostData(data):void {
+function initPostData(data:Record<string|symbol,any>):void {
+    console.log(data);
+    
     initUserData();
     postTicketData(data).then((data) => {
         if (data.success) {

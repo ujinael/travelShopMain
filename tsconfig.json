@@ -12,6 +12,9 @@
     "importHelpers": true,
 
     "paths": {
+      "@templates/*": [
+        "templates/*"
+      ],
       "@services/*": [
         "services/*"
       ],
